@@ -5,58 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Mini App</title>
     <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
         }
-        .link {
-            margin: 10px;
-            text-decoration: none;
-            color: #000;
-            font-size: 18px;
-        }
-        .link img {
-            width: 100px;
-            height: 100px;
+        .country-link {
             display: block;
-            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .country-link:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .turkey {
+            background-image: url('turkey.jpg');
+        }
+        /* Добавленная ссылка для Турции */
+        .turkey-link {
+            background-image: url('turkey.jpg'); /* Указать путь к изображению Турции */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a class="link" href="https://example.com/turkey">
-            <img src="https://example.com/turkey.jpg" alt="Turkey">
-            Туры в Турцию
-        </a>
-        <a class="link" href="https://example.com/egypt">
-            <img src="https://example.com/egypt.jpg" alt="Egypt">
-            Туры в Египет
-        </a>
-        <a class="link" href="https://example.com/russia">
-            <img src="https://example.com/russia.jpg" alt="Russia">
-            Туры по РФ
-        </a>
-        <a class="link" href="https://example.com/thailand">
-            <img src="https://example.com/thailand.jpg" alt="Thailand">
-            Туры в Таиланд
-        </a>
-        <a class="link" href="https://example.com/vietnam">
-            <img src="https://example.com/vietnam.jpg" alt="Vietnam">
-            Туры во Вьетнам
-        </a>
-        <a class="link" href="https://example.com/cuba">
-            <img src="https://example.com/cuba.jpg" alt="Cuba">
-            Туры на Кубу
-        </a>
-        <a class="link" href="https://example.com/srilanka">
-            <img src="https://example.com/srilanka.jpg" alt="Sri Lanka">
-            Туры на Шри-Ланку
-        </a>
-    </div>
+    <!-- Ссылка на Турцию с фоновым изображением -->
+    <a href="https://www.onlinetours.ru/deeplinks?adults=2&advert=326&depart_city_id=20001&destination_id=15&destination_type=Country&duration_from=6&duration_to=18&kids=0&operator_ids%5B%5D=17&operator_ids%5B%5D=302&operator_ids%5B%5D=5&operator_ids%5B%5D=8&operator_ids%5B%5D=1&operator_ids%5B%5D=3&sort=cheap&start_from={today}&sub_id=461253" class="country-link turkey-link"></a>
+    <!-- Добавьте аналогичные ссылки для других стран -->
+    <!-- <a href="https://example.com/tours/egypt" class="country-link egypt"></a> -->
+    <!-- и так далее -->
 </body>
 </html>
